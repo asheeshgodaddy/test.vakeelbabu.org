@@ -1,0 +1,92 @@
+/* ===== MENU & NAVIGATION ===== */
+
+nav {
+  background-color: #397cc2;
+  font-family: 'Segoe UI', sans-serif;
+  font-weight: 500;
+}
+
+.scrollmenu {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 10px 20px;
+  background-color: #397cc2;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 12px;
+  align-items: center;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #0a3c78;
+  color: white;
+  border-radius: 999px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  white-space: nowrap;
+}
+
+.menu a:hover {
+  background-color: #062c5c;
+}
+
+.menu a.blinking-red {
+  background-color: #d93025 !important;
+  animation: blink 1.2s infinite;
+}
+
+.menu a.text-yellow {
+  color: #ffc107 !important;
+}
+
+.new-tag {
+  background-color: #d93025;
+  color: white;
+  padding: 2px 8px;
+  font-size: 12px;
+  border-radius: 12px;
+  margin-left: 6px;
+  animation: pulse 1.5s infinite;
+}
+
+.blinking-red {
+  color: #ffd700;
+  animation: blink 1.2s infinite;
+}
+
+/* Banner logo section */
+nav .flex.justify-center {
+  background-color: white;
+  padding: 10px 0;
+}
+
+/* ================= Animations ================= */
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0.25; }
+  100% { opacity: 1; }
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.1); opacity: 0.7; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive tweaks */
+@media screen and (max-width: 768px) {
+  .menu {
+    gap: 8px;
+  }
+  .menu a {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
