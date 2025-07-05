@@ -82,6 +82,7 @@ header img {
   color: #003366;
   border-color: #fcd000;
   box-shadow: 0 0 5px rgba(252, 208, 0, 0.6);
+  transform: scale(1.1);
 }
 
 /* === TRANSLATOR SECTION FIX === */
