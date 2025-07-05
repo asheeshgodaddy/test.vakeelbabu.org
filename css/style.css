@@ -78,11 +78,11 @@ header img {
 }
 
 .menu a:hover {
-  background-color: #fcd000;
+  background-color: #71a5f8;
   color: #003366;
   border-color: #fcd000;
   box-shadow: 0 0 5px rgba(252, 208, 0, 0.6);
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 /* === TRANSLATOR SECTION FIX === */
