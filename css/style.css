@@ -31,80 +31,52 @@ header img {
   display: block;
 }
 
-/* === SCROLLMENU WRAPPER === */
+/* === MAIN NAVIGATION BAR (MENU + TRANSLATOR) === */
 .scrollmenu {
   display: flex;
-  justify-content: flex-start; /* Align items to start */
+  justify-content: center;
   align-items: center;
-  background-color: #3f71b1;
+  background-color: #ffffff;
   padding: 10px 20px;
-  overflow-x: auto;
-  white-space: nowrap;
-  gap: 16px;
-  scrollbar-width: thin;
-  scroll-behavior: smooth;
-}
-
-/* === MENU CONTAINER === */
-.menu {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 12px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
 }
 
 /* === MENU LINKS === */
-.menu a {
-  background-color: #0d3b66;
-  color: white;
-  text-decoration: none;
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.menu a, .menu span {
   padding: 10px 18px;
-  border-radius: 12px;
+  background-color: #f1f5f9;
+  color: #1e3a8a;
+  border-radius: 999px; /* pill shape */
+  font-weight: 600;
   font-size: 16px;
-  font-weight: 500;
-  white-space: nowrap;
+  text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
 }
 
 .menu a:hover {
-  background-color: #155fa0;
-  transform: translateY(-2px);
-}
-
-/* HIGHLIGHTED BUTTON (Free Advice, Lawyer Sign-Up) */
-.menu .blinking-red {
-  background-color: #c62828;
+  background-color: #1e3a8a;
   color: white;
-  font-weight: 600;
-  animation: colorBlink 1s infinite;
-}
-
-@keyframes colorBlink {
-  0%, 100% { color: #fff700; }
-  50% { color: #ffa500; }
-}
-
-/* NEW TAG */
-.new-tag {
-  background-color: #e53935;
-  color: white;
-  font-size: 12px;
-  padding: 3px 6px;
-  border-radius: 10px;
-  margin-left: 6px;
-  font-weight: bold;
+  transform: translateY(-1px);
 }
 
 /* === TRANSLATOR SECTION FIX === */
 .language-selector {
-  flex-shrink: 0;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  min-width: 150px;
-  max-width: 200px;
-  padding-left: 10px;
+  margin-left: auto;
+  padding-left: 12px;
 }
 
 #google_translate_element {
@@ -187,7 +159,7 @@ header img {
 .text-section {
   font-size: 20px;
   font-display:swap;
-  font-family: aptos;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-style:normal;
   font-weight:500;
   color: #f9f9f9dc;
@@ -225,73 +197,18 @@ ul.justified-list li {
   font-size: 18px;
 }
 
-/* HIGHLIGHTED BUTTON (Free Advice, Lawyer Sign-Up) */
-.menu .blinking-red {
-  background-color: #c62828;
-  color: white;
-  font-weight: 600;
+.blinking-red {
   animation: colorBlink 1s infinite;
+  color: red;
+  font-weight: bold;
 }
 
 @keyframes colorBlink {
-  0%, 100% { color: #fff700; }
-  50% { color: #ffa500; }
-}
-
-/* NEW TAG */
-.new-tag {
-  background-color: #e53935;
-  color: white;
-  font-size: 12px;
-  padding: 3px 6px;
-  border-radius: 10px;
-  margin-left: 6px;
-  font-weight: bold;
+  0%, 100% { color: yellow; }
+  50% { color: orange; }
 }
 
 /* === RESPONSIVE ADJUSTMENTS === */
-@media (max-width: 768px) {
-  .scrollmenu {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  /* Yellow text (e.g., "Dial us") */
-.text-yellow {
-  color: #fcd000 !important;
-  font-weight: bold;
-  font-size: 18px;
-}
-  .menu {
-    width: 100%;
-    justify-content: center;
-  }
-/* Email Text */
-.menu span {
-  color: white;
-  font-weight: 500;
-  font-size: 16px;
-  margin-left: 20px;
-  white-space: nowrap;
-}
-  /* NEW tag styling */
-.new-tag {
-  background-color: red;
-  color: white;
-  font-size: 14px;
-  padding: 2px 6px;
-  border-radius: 10px;
-  margin-left: 5px;
-  font-weight: bold;
-  animation: blinkNew 1s infinite;
-}
-
-@keyframes blinkNew {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-/* Responsive Menu */
 @media (max-width: 768px) {
   .scrollmenu {
     flex-wrap: wrap;
@@ -299,25 +216,17 @@ ul.justified-list li {
 
   .menu {
     flex-direction: column;
-    gap: 8px;
+    gap: 10px;
+  }
+
+  .language-selector {
+    margin-top: 10px;
+    justify-content: center;
   }
 
   .menu a {
-    width: 100%;
-    max-width: 300px;
-    text-align: center;
-  }
-
-  .language-selector {
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
-  }
-}
-  .language-selector {
-    width: 100%;
-    justify-content: center;
-    margin-top: 10px;
+    flex: 1 1 100%;
+    min-width: auto;
   }
 }
 
