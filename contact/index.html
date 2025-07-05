@@ -113,34 +113,33 @@
   <div class="contact-container">
     <!-- Left: Form -->
     <div class="form-section">
-      <h2>Send Us a Message</h2>
-      <p>Fill out the form below and our legal experts will get back to you within 2 hours.</p>
-      <form id="contactForm">
-        <input type="text" name="name" placeholder="Full Name *" required>
-        <input type="tel" name="phone" placeholder="Phone Number *" required>
-        <input type="email" name="email" placeholder="Email Address *" required>
-
-        <select name="issueType" required>
-          <option value="">Select legal issue *</option>
-          <option value="Family">Family</option>
-          <option value="Property">Property</option>
-          <option value="Criminal">Criminal</option>
-          <option value="Corporate">Corporate</option>
-          <option value="Civil">Civil</option>
-          <option value="Documentation">Documentation</option>
-          <option value="Others">Others</option>
+      <h2 style="text-align: center;">Send Us a Message</h2>
+      <p><br>Fill out the form below and our legal experts will get back to you within 2 hours.<br></p>
+      <form id="contactForm" action="https://script.google.com/macros/s/AKfycbwlcAz-bPnv_jjfwypzZ5UrsdQrurdCyzKvC5ZT40etPLOvOMDtcWgFkf3v6Udvw-6gxA/exec" method="POST">
+        <input name="name" placeholder="Full Name *" required>
+        <input name="phone" placeholder="Phone Number *" required>
+        <input name="email" placeholder="Email Address *" required type="email">
+        
+        <select name="issue" required>
+          <option value="">Select legal issue</option>
+          <option>Family</option>
+          <option>Property</option>
+          <option>Criminal</option>
+          <option>Corporate</option>
+          <option>Civil</option>
+          <option>Documentation</option>
+          <option>Others</option>
         </select>
-
+      
         <select name="urgency" required>
-          <option value="">Select urgency *</option>
-          <option value="Low">Low</option>
-          <option value="Medium">Medium</option>
-          <option value="High">High</option>
-          <option value="Emergency">Emergency</option>
+          <option value="">Select urgency</option>
+          <option>Low</option>
+          <option>Medium</option>
+          <option>High</option>
+          <option>Emergency</option>
         </select>
-
-        <textarea name="message" placeholder="Message *" required></textarea>
-
+      
+        <textarea name="message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </div>
