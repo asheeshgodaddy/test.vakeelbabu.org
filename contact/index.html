@@ -1,72 +1,184 @@
-<html> 
-  <head>
-    <title>Contact Vakeel Babu | Legal Help & Lawyer Support</title>
-    <link rel="icon" href="/images/favicon.png" type="image/png">
-    <meta name="description" content="Contact Vakeel Babu for legal support, lawyer consultations, or general queries. We’re here to assist with your legal needs.">
-    <meta name="keywords" content="contact lawyer India, legal help contact, talk to lawyer, Vakeel Babu support, legal query India">
-    
-    <link rel="stylesheet" href="/css/style.css">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Vakeel Babu | Legal Help & Lawyer Support</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" href="/images/favicon.png" type="image/png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body> 
-   <header>
-      <div id="nav-placeholder"></div>
+  <style>
+    body {
+      font-family: sans-serif;
+      background-color: #f8f9fa;
+      margin: 0;
+      padding: 0;
+    }
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 30px auto;
+      gap: 20px;
+      padding: 0 20px;
+    }
+    .form-section, .info-section {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      flex: 1;
+      min-width: 360px;
+    }
+    .form-section h2, .info-section h2 {
+      margin-top: 0;
+      font-size: 24px;
+      color: #1c1e21;
+    }
+    .form-section form input, .form-section form select, .form-section form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 15px;
+    }
+    .form-section form textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+    .form-section form button {
+      width: 100%;
+      background: linear-gradient(to right, #fcd000, #fcb900);
+      color: #000;
+      padding: 14px;
+      font-weight: bold;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .highlight-box {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #001d3d;
+      color: white;
+      text-align: center;
+    }
+    .highlight-box button {
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: white;
+      color: #001d3d;
+      border: none;
+      font-weight: bold;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .card {
+      margin-top: 20px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .card h3 {
+      margin: 0 0 10px;
+    }
+    .card p {
+      margin: 0;
+      font-size: 14px;
+      color: #333;
+    }
+    .icon {
+      font-size: 20px;
+      color: #fcb900;
+      margin-right: 8px;
+    }
+  </style>
+</head>
 
-      <script>
-        fetch("/src/menu.html")
-          .then(response => response.text())
-          .then(data => {
-            document.getElementById("nav-placeholder").innerHTML = data;
-          });
-      </script>
-    </header>
-      <div class="text-container-frontface">
-        <span class="blinking-red">
-          <a href="https://www.vakeelbabu.org" style="text-decoration: none; color: inherit;font-size: 50px;"></a>
-          <h1>Ready to discuss your legal needs??</h1>
-          <h1>We're here to help.</h1>
-        </span>
-      </div>
-      <div class="container">
-        <div class="text-container">
-          <p class="text-section">
-            <br>At <b><i>Vakeel Babu</i></b>, we understand that navigating legal matters can be daunting. Our team is committed to providing clear guidance and effective solutions. Reach out to us today to schedule a confidential consultation.
-          </p>
-          <div class="text-container-frontface">
-            <span class="blinking-red">
-              <a href="https://www.vakeelbabu.org" style="text-decoration: none; color: inherit;font-size: 50px;"></a>
-            	  <h1>Call us on:  +91-9555007911</h1>
-                <br>
-                <h2>E-mail us: vakeelbabuassociates@gmail.com</h2>
-            </span>      
-          </div>
-          <h3>Visit Our Office:</h3>
-          <i>&nbsp;&nbsp;&nbsp;&nbsp; 5091, <br>&nbsp;&nbsp;&nbsp;&nbsp; Tower-6, Block-E,<br>&nbsp;&nbsp;&nbsp;&nbsp; GH-07, Crossing Republik, <br> &nbsp;&nbsp;&nbsp;&nbsp; Ghaziabad, U.P. <br> &nbsp;&nbsp;&nbsp;&nbsp; India </i>
-        </div>
-      </div> 
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({
-            pageLanguage: 'en',
-            includedLanguages: 'en,hi,es,fr,de', // customize the languages
-            layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-          }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-                
-    <!-- JavaScript to fix the menu on top while scrolling-->
+<body>
+  <header>
+    <div id="nav-placeholder"></div>
     <script>
-      const scrollmenu = document.getElementById("scrollmenu");
-      const offsetTop = scrollmenu.offsetTop;
-
-      window.addEventListener("scroll", function () {
-        if (window.pageYOffset >= offsetTop) {
-          scrollmenu.classList.add("fixed");
-        } else {
-          scrollmenu.classList.remove("fixed");
-        }
-      });
+      fetch("/src/menu.html")
+        .then(res => res.text())
+        .then(data => document.getElementById("nav-placeholder").innerHTML = data);
     </script>
-  </body>
+  </header>
+
+  <div class="contact-container">
+    <!-- Left: Form -->
+    <div class="form-section">
+      <h2>Send Us a Message</h2>
+      <p>Fill out the form below and our legal experts will get back to you within 2 hours.</p>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Full Name *" required>
+        <input type="tel" name="phone" placeholder="Phone Number *" required>
+        <input type="email" name="email" placeholder="Email Address *" required>
+
+        <select name="issueType" required>
+          <option value="">Select legal issue *</option>
+          <option value="Family">Family</option>
+          <option value="Property">Property</option>
+          <option value="Criminal">Criminal</option>
+          <option value="Corporate">Corporate</option>
+          <option value="Civil">Civil</option>
+          <option value="Documentation">Documentation</option>
+          <option value="Others">Others</option>
+        </select>
+
+        <select name="urgency" required>
+          <option value="">Select urgency *</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+          <option value="Emergency">Emergency</option>
+        </select>
+
+        <textarea name="message" placeholder="Message *" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Right: Info -->
+    <div class="info-section">
+      <h2>Contact Information</h2>
+      <p>Reach out to us through any of these channels. We're committed to prompt and professional help.</p>
+
+      <div class="card">
+        <h3>⭐ 4.9/5</h3>
+        <p>Client Rating (Based on 200+ reviews)</p>
+      </div>
+
+      <div class="card">
+        <h3>💼 Expert Legal Team</h3>
+        <p>Experienced lawyers specializing in various fields</p>
+      </div>
+
+      <div class="card">
+        <h3>📈 Proven Track Record</h3>
+        <p>Successfully handled 1000+ cases</p>
+      </div>
+
+      <div class="card">
+        <h3>🎯 Personalized Service</h3>
+        <p>Tailored solutions for your unique needs</p>
+      </div>
+
+      <div class="highlight-box">
+        <h3>🔒 Confidential Consultation</h3>
+        <p>Your information is completely secure and confidential.</p>
+        <button>100% Secure & Confidential</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="/src/g_trans.js"></script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
 </html>
