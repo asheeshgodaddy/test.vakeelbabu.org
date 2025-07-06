@@ -206,8 +206,8 @@ ul.justified-list li {
 }
 
 @keyframes colorBlink {
-  0%, 100% { color: yellow; }
-  50% { color: orange; }
+  0%, 100% { color: rgba(255, 34, 0, 0.719); }
+  50% { color: rgba(233, 8, 8, 0.981); }
 }
 
 /* === RESPONSIVE ADJUSTMENTS === */
